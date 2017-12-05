@@ -6,7 +6,7 @@ var deleteButton = "<button>X</button>";
 $('#submit').click(function () {
   //var textInput = $('#form').val();
   //console.log(textInput);
-  $('ul').append($('<li>' + $('#form').val() + deleteButton));
+  $('ul').append($('<li>' + $('#form').val() + " " +deleteButton));
   $('#form').val('');
   $('li').on('click',function() {
     this.remove();
