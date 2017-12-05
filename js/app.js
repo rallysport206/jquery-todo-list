@@ -8,12 +8,14 @@ $('#submit').click(function () {
   //console.log(textInput);
   $('ul').append($('<li>' + $('#form').val() + deleteButton));
   $('#form').val('');
+  $('li').on('click',function() {
+    this.remove();
+  });
 });
+
 // $('#submit').click(function () {
 //   $('ul').append($('<li>',{
 //     text: $('#form').val()
 //   }));
 //   $('#form').val('');
 // });
-//suppose to remove value after submitting form
-//remove item from List
